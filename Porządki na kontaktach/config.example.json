@@ -1,0 +1,8 @@
+{
+  "zoho": {
+    "client_id": "TWOJ_CLIENT_ID",
+    "client_secret": "TWOJ_CLIENT_SECRET",
+    "refresh_token": "TWOJ_REFRESH_TOKEN"
+  }
+}
+

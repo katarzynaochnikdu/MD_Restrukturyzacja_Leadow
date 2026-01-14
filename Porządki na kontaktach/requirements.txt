@@ -1,0 +1,4 @@
+# Zoho Data Cleanup - wymagania
+
+# GUI Web (opcjonalne - tylko dla trybu --gui)
+flask>=3.0.0

@@ -1,0 +1,36 @@
+Lead_ID,Lead_Name,Current_Status,Uwagi
+1234567890123456789,[TEST] Jan Kowalski,Lead,Do zaktualizowania
+9876543210987654321,[TEST] Maria Nowak,Lead,Do zaktualizowania
+5555555555555555555,[TEST] TEST FIRMA,Dzwonienie,Zmiana statusu
+
+# INSTRUKCJA UŻYCIA:
+# 
+# 1. PRZED UŻYCIEM - PODMIEŃ ID NA PRAWIDŁOWE!
+# 
+#    Lead_ID - musi być prawidłowym ID leada z modułu Leads w Zoho CRM
+# 
+# 2. Jak znaleźć prawidłowe ID:
+#    - Otwórz lead w Zoho CRM
+#    - Skopiuj ID z URL (np. https://crm.zoho.eu/crm/org.../tab/Leads/1234567890123456789)
+#    - Wklej do kolumny Lead_ID
+# 
+# 3. Użycie:
+#    python update_lead_status.py przykład_leady_test.csv
+#    
+#    - Wybierz kolumnę 1 (Lead_ID)
+#    - Wybierz nowy status (np. 2 - Dzwonienie)
+#    - Potwierdź aktualizację
+# 
+# 4. Sprawdź wyniki:
+#    Zobacz plik: wyniki_update_lead_status/update_status_results_*.csv
+#    
+#    Plik zawiera:
+#    - Stary status (przed zmianą)
+#    - Nowy status (po zmianie)
+#    - Status operacji (SUKCES / BŁĄD)
+# 
+# UWAGA: Te ID są przykładowe i NIE BĘDĄ DZIAŁAĆ!
+#        Musisz użyć prawidłowych ID z Twojego CRM!
+# 
+# UWAGA 2: Użyj leadów testowych (stworzonych przez create_leads_from_file.py w trybie testowym)
+#          aby nie zepsuć prawdziwych leadów!

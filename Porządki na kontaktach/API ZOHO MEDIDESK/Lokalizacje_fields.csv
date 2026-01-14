@@ -1,0 +1,12 @@
+﻿Etykieta Pola (UI),Nazwa API,Typ Danych,Pole Niestandardowe,Wymagane,Tylko Odczyt,Typ Danych (Polski),Możliwe Wartości,Powiązany Moduł,Maks. Długość,Sekcja,Wartość Domyślna
+Adres placówki,Adres_placowki,textarea,✓,,,Tekst wielowierszowy,,,2000,,
+Dane_instalacji_uslugi,Dane_instalacji_uslugi,lookup,✓,,,Lookup,,Dane_instalacji,,,
+Informatyk,Informatyk,lookup,✓,,,Lookup,,Contacts,,,
+Kontakt 1,Kontakt_1,lookup,✓,,,Lookup,,Contacts,,,
+Kontakt 2,Kontakt_2,lookup,✓,,,Lookup,,Contacts,,,
+Placówka medyczna,Placowka_medyczna,lookup,✓,,,Lookup,,Accounts,,,
+Status,Status,picklist,✓,,,Lista wyboru,-None-; ✅; ❌,,,,
+Usługa do wdrożenia,Usluga_do_wdrozenia,picklist,✓,,,Lista wyboru,-None-; Medi Veti VoIP 2025; Medyczne Rewolucje; Teledesk; Voicebot; SMS; Formularz; Chat zewnętrzny; Chat wewnętrzny; Zamówienie umowy PoxBox,,,,
+Czas Utworzenia,Created_Time,datetime,,,,Data i czas,,,,,
+Czas modyfikacji,Modified_Time,datetime,,,,Data i czas,,,,,
+Identyfikator elementu nadrzędnego,Parent_Id,lookup,,,✓,Lookup,,Deals,,,

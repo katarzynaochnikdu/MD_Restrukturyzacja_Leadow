@@ -1,0 +1,78 @@
+﻿project_type,source_I_tier,source_II_tier,source_III_tier,N_entered,N_with_meeting,pct_with_meeting,median_days_to_meeting,mean_days_to_meeting,N_to_deal,pct_to_deal,N_won,pct_won_of_entered,win_rate_of_deals,avg_ojp,sum_ankiety,avg_ojp_weighted
+PreSales,Inbound,Email na biuro,Email na biuro,31.0,7.0,22.58,2.0,2.71,20.0,64.52,1.0,3.23,5.0,4.0,3.0,4.0
+PreSales,Inbound,Facebook,EBook Trudny Pacjent,539.0,4.0,0.74,27.0,70.0,7.0,1.3,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Facebook,EBook Zmiany w prawie marketingu medycznego,606.0,5.0,0.83,15.5,16.33,6.0,0.99,0.0,0.0,0.0,3.5,2.0,3.5
+PreSales,Inbound,Facebook,EBook Zyskowna przychodnia - redukcja kosztów,57.0,1.0,1.75,15.0,15.0,5.0,8.77,1.0,1.75,20.0,5.0,1.0,5.0
+PreSales,Inbound,Facebook,Facebook,2.0,0.0,0.0,,,2.0,100.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Facebook,Kurs MBM Black Friday,14.0,0.0,0.0,,,0.0,0.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Facebook,Umów spotkanie FB,51.0,4.0,7.84,7.0,5.6,2.0,3.92,0.0,0.0,0.0,2.0,2.0,2.0
+PreSales,Inbound,Facebook,general,1.0,0.0,0.0,,,1.0,100.0,1.0,100.0,100.0,,0.0,
+PreSales,Inbound,Konferencja,202509 AMOZ X,5.0,0.0,0.0,,,5.0,100.0,2.0,40.0,40.0,,0.0,
+PreSales,Inbound,Konferencja,Konferencja,2.0,2.0,100.0,32.0,32.0,1.0,50.0,0.0,0.0,0.0,,1.0,
+PreSales,Inbound,Konferencja,Konferencja zewnętrzna,3.0,0.0,0.0,,,3.0,100.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Konferencja zewnętrzna,202510 Dolmed,1.0,1.0,100.0,8.0,8.0,0.0,0.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,LinkedIn,LinkedIn,2.0,0.0,0.0,,,0.0,0.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Polecenie,Firma polecająca,17.0,5.0,29.41,4.0,9.83,8.0,47.06,2.0,11.76,25.0,5.0,1.0,5.0
+PreSales,Inbound,Polecenie,Partner polecający,676.0,2.0,0.3,7.5,7.5,7.0,1.04,0.0,0.0,0.0,4.0,1.0,4.0
+PreSales,Inbound,Polecenie,Polecenie,13.0,2.0,15.38,6.0,6.0,3.0,23.08,0.0,0.0,0.0,,1.0,
+PreSales,Inbound,Polecenie,Pracownik medidesk,9.0,1.0,11.11,4.0,4.0,7.0,77.78,0.0,0.0,0.0,2.0,1.0,2.0
+PreSales,Inbound,Strona internetowa medidesk,Audyt Marketingowy 202503,75.0,5.0,6.67,10.0,9.2,8.0,10.67,2.0,2.67,25.0,3.83,6.0,3.83
+PreSales,Inbound,Strona internetowa medidesk,Audyt Tajemniczego Pacjenta 202503,51.0,1.0,1.96,30.0,38.0,14.0,27.45,1.0,1.96,7.14,3.83,6.0,3.83
+PreSales,Inbound,Strona internetowa medidesk,EBook Trudny Pacjent,2.0,0.0,0.0,,,0.0,0.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Strona internetowa medidesk,Email biuro,2.0,0.0,0.0,,,1.0,50.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Strona internetowa medidesk,FB,2.0,1.0,50.0,6.0,6.0,0.0,0.0,0.0,0.0,0.0,3.0,1.0,3.0
+PreSales,Inbound,Strona internetowa medidesk,Integracja z Medfile,6.0,0.0,0.0,,,0.0,0.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Strona internetowa medidesk,Meddiesk 3.0,45.0,0.0,0.0,4.5,4.5,13.0,28.89,0.0,0.0,0.0,4.0,2.0,4.0
+PreSales,Inbound,Strona internetowa medidesk,Medidesk 3.0 Sales 20251203,1.0,0.0,0.0,,,0.0,0.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Strona internetowa medidesk,Medidesk EDU audyty,2.0,1.0,50.0,3.0,3.0,1.0,50.0,1.0,50.0,100.0,,0.0,
+PreSales,Inbound,Strona internetowa medidesk,Medidesk EDU kontakt,1.0,0.0,0.0,,,1.0,100.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Strona internetowa medidesk,Medidesk EDU szkolenia,3.0,0.0,0.0,,,1.0,33.33,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Strona internetowa medidesk,Medidesk Kontakt EN,6.0,1.0,16.67,13.0,13.0,0.0,0.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Strona internetowa medidesk,Medidesk Kontakt PL,75.0,6.0,8.0,0.5,6.83,10.0,13.33,3.0,4.0,30.0,3.5,4.0,3.5
+PreSales,Inbound,Strona internetowa medidesk,Medidesk edu,1.0,0.0,0.0,,,1.0,100.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Strona internetowa medidesk,SMS Campaign,1.0,0.0,0.0,,,0.0,0.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Strona internetowa medidesk,Strona internetowa medidesk,15.0,10.0,66.67,6.5,6.83,4.0,26.67,0.0,0.0,0.0,,5.0,
+PreSales,Inbound,Strona internetowa medidesk,Umów spotkanie,148.0,11.0,7.43,3.0,4.25,45.0,30.41,9.0,6.08,20.0,3.69,18.0,3.69
+PreSales,Inbound,Strona internetowa medidesk,Webinar Marafiki 20250409,1.0,0.0,0.0,,,0.0,0.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Szkolenie,Szkolenie,1.0,0.0,0.0,,,1.0,100.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Telefon na biuro,Telefon na biuro,45.0,4.0,8.89,4.0,4.0,40.0,88.89,13.0,28.89,32.5,3.33,4.0,3.33
+PreSales,Inbound,Telefon na infolinie,Telefon na infolinie,4.0,0.0,0.0,3.0,3.0,3.0,75.0,1.0,25.0,33.33,,0.0,
+PreSales,Inbound,Webinar,Webinar,4.0,0.0,0.0,,,0.0,0.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Webinary medidesk,20250219 - AI w służbie zdrowia,1.0,0.0,0.0,,,1.0,100.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Webinary medidesk,20250319 - Jak rozwijać placówkę,5.0,2.0,40.0,43.5,43.5,1.0,20.0,1.0,20.0,100.0,,0.0,
+PreSales,Inbound,Webinary medidesk,20250409 - Webinar Marafiki,2.0,1.0,50.0,12.0,12.0,1.0,50.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Webinary medidesk,20250514 - Webinar Marafiki,1.0,0.0,0.0,,,1.0,100.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Webinary medidesk,20250604 - Pozycjonowanie i social media,1.0,1.0,100.0,15.0,15.0,0.0,0.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Webinary medidesk,20250612 - Chirurgiczny lejek online,2.0,0.0,0.0,,,1.0,50.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,Webinary medidesk,20250625 - Komunikacja z pokoleniem Z,3.0,1.0,33.33,27.0,27.0,2.0,66.67,1.0,33.33,50.0,,0.0,
+PreSales,Inbound,Webinary medidesk,20250710 - Medidesk 3.0,3.0,0.0,0.0,,,3.0,100.0,0.0,0.0,0.0,,0.0,
+PreSales,Inbound,brak danych,brak danych,7.0,0.0,0.0,,,0.0,0.0,0.0,0.0,0.0,4.0,1.0,4.0
+PreSales,Outbound,Akwizycja telefoniczna,Akwizycja telefoniczna,1901.0,152.0,8.0,20.0,39.58,446.0,23.46,44.0,2.31,9.87,3.31,70.0,3.31
+PreSales,Outbound,Akwizycja telefoniczna po konferencji,Akwizycja telefoniczna po konferencji,3.0,0.0,0.0,,,2.0,66.67,1.0,33.33,50.0,,0.0,
+PreSales,Outbound,Akwizycja telefoniczna po webinarze,Akwizycja telefoniczna po webinarze,15.0,3.0,20.0,9.0,33.33,7.0,46.67,0.0,0.0,0.0,2.0,1.0,2.0
+PreSales,Outbound,Facebook,Facebook,3.0,0.0,0.0,,,2.0,66.67,0.0,0.0,0.0,,0.0,
+PreSales,Outbound,Facebook po pobraniu,Facebook po pobraniu,3.0,1.0,33.33,19.5,19.5,0.0,0.0,0.0,0.0,0.0,,0.0,
+PreSales,Outbound,Reinkarnacja,Reinkarnacja,46.0,13.0,28.26,16.0,47.67,13.0,28.26,3.0,6.52,23.08,4.0,6.0,4.0
+PreSales,Outbound,brak danych,brak danych,10.0,1.0,10.0,18.0,18.0,1.0,10.0,1.0,10.0,100.0,,1.0,
+Sales only,Inbound,Email na biuro,Email na biuro,10.0,0.0,0.0,,,10.0,100.0,0.0,0.0,0.0,,0.0,
+Sales only,Inbound,Konferencja,202509 AMOZ X,12.0,0.0,0.0,,,12.0,100.0,2.0,16.67,16.67,,0.0,
+Sales only,Inbound,Konferencja,202509 AMOZ Xjj,1.0,0.0,0.0,,,1.0,100.0,0.0,0.0,0.0,,0.0,
+Sales only,Inbound,Konferencja,Konferencja zewnętrzna,7.0,0.0,0.0,,,7.0,100.0,0.0,0.0,0.0,,0.0,
+Sales only,Inbound,LinkedIn,LinkedIn,2.0,0.0,0.0,,,2.0,100.0,0.0,0.0,0.0,,0.0,
+Sales only,Inbound,Polecenie,Firma polecająca,14.0,0.0,0.0,,,14.0,100.0,4.0,28.57,28.57,,0.0,
+Sales only,Inbound,Polecenie,Partner polecający,4.0,0.0,0.0,,,4.0,100.0,0.0,0.0,0.0,,0.0,
+Sales only,Inbound,Polecenie,Polecenie,2.0,0.0,0.0,,,2.0,100.0,0.0,0.0,0.0,,0.0,
+Sales only,Inbound,Polecenie,Pracownik medidesk,12.0,0.0,0.0,,,12.0,100.0,4.0,33.33,33.33,,0.0,
+Sales only,Inbound,Strona internetowa medidesk,FB,1.0,0.0,0.0,,,1.0,100.0,0.0,0.0,0.0,,0.0,
+Sales only,Inbound,Strona internetowa medidesk,Medidesk EDU kontakt,3.0,0.0,0.0,,,3.0,100.0,0.0,0.0,0.0,,0.0,
+Sales only,Inbound,Strona internetowa medidesk,Medidesk EDU szkolenia,2.0,0.0,0.0,,,2.0,100.0,0.0,0.0,0.0,,0.0,
+Sales only,Inbound,Strona internetowa medidesk,Medidesk edu,2.0,0.0,0.0,,,2.0,100.0,0.0,0.0,0.0,,0.0,
+Sales only,Inbound,Strona internetowa medidesk,Umów spotkanie,1.0,0.0,0.0,,,1.0,100.0,1.0,100.0,100.0,,0.0,
+Sales only,Inbound,Szkolenie,Szkolenie,5.0,0.0,0.0,,,5.0,100.0,2.0,40.0,40.0,,0.0,
+Sales only,Inbound,Telefon na biuro,Telefon na biuro,4.0,0.0,0.0,,,4.0,100.0,3.0,75.0,75.0,,0.0,
+Sales only,Inbound,Webinary medidesk,20250219 - AI w służbie zdrowia,1.0,0.0,0.0,,,1.0,100.0,1.0,100.0,100.0,,0.0,
+Sales only,Inbound,Zoho Bookings,Zoho Bookings,1.0,0.0,0.0,,,1.0,100.0,0.0,0.0,0.0,,0.0,
+Sales only,Outbound,Akwizycja telefoniczna,Akwizycja telefoniczna,202.0,0.0,0.0,,,202.0,100.0,121.0,59.9,59.9,,0.0,
+Sales only,Outbound,Akwizycja telefoniczna po konferencji,Akwizycja telefoniczna po konferencji,6.0,0.0,0.0,,,6.0,100.0,0.0,0.0,0.0,,0.0,
+Sales only,Outbound,LinkedIn,LinkedIn,2.0,0.0,0.0,,,2.0,100.0,0.0,0.0,0.0,,0.0,
+Sales only,Outbound,Reinkarnacja,Reinkarnacja,9.0,0.0,0.0,,,9.0,100.0,6.0,66.67,66.67,,0.0,

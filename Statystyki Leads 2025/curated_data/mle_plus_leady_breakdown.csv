@@ -1,0 +1,42 @@
+﻿I_tier,II_tier,III_tier,Styczeń,Luty,Marzec,Kwiecień,Maj,Czerwiec,Lipiec,Sierpień,Wrzesień,Październik,Listopad,Grudzień,SUMA
+Inbound,Email na biuro,Email na biuro,1,0,0,2,2,1,2,0,1,0,0,2,11
+Inbound,Facebook,EBook Trudny Pacjent,0,0,0,38,10,1,12,76,40,0,0,0,177
+Inbound,Facebook,EBook Zmiany w prawie marketingu medycznego,0,0,0,0,8,3,3,36,65,35,8,9,167
+Inbound,Facebook,EBook Zyskowna przychodnia - redukcja kosztów,0,0,0,0,0,0,0,0,16,9,5,0,30
+Inbound,Facebook,Kurs MBM Black Friday,0,0,0,0,0,0,0,0,0,0,4,1,5
+Inbound,Facebook,Umów spotkanie FB,0,0,0,0,0,0,1,8,4,5,2,7,27
+Inbound,Konferencja,Konferencja,0,0,1,0,0,0,0,0,0,0,0,1,2
+Inbound,LinkedIn,LinkedIn,0,0,0,2,0,0,0,0,0,0,0,0,2
+Inbound,Polecenie,Firma polecająca,0,1,1,1,0,1,3,0,2,0,0,0,9
+Inbound,Polecenie,Partner polecający,0,0,0,1,0,1,1,0,0,272,1,0,276
+Inbound,Polecenie,Polecenie,9,0,1,2,0,0,0,0,0,0,0,0,12
+Inbound,Polecenie,Pracownik medidesk,1,0,0,0,0,0,1,0,0,0,0,0,2
+Inbound,Strona internetowa medidesk,Audyt Marketingowy 202503,0,0,0,26,6,4,0,0,1,0,0,0,37
+Inbound,Strona internetowa medidesk,Audyt Tajemniczego Pacjenta 202503,0,0,0,1,1,0,0,1,1,0,0,5,9
+Inbound,Strona internetowa medidesk,Email biuro,0,0,1,0,0,0,0,0,0,0,0,0,1
+Inbound,Strona internetowa medidesk,FB,0,0,1,1,0,0,0,0,0,0,0,0,2
+Inbound,Strona internetowa medidesk,Meddiesk 3.0,0,0,0,0,0,1,1,2,0,1,1,0,6
+Inbound,Strona internetowa medidesk,Medidesk EDU audyty,0,1,0,0,0,0,0,0,0,0,0,0,1
+Inbound,Strona internetowa medidesk,Medidesk EDU szkolenia,0,0,1,0,0,0,0,0,0,0,0,0,1
+Inbound,Strona internetowa medidesk,Medidesk Kontakt EN,0,0,0,0,1,0,0,0,0,0,0,0,1
+Inbound,Strona internetowa medidesk,Medidesk Kontakt PL,1,1,1,0,2,1,1,1,2,0,2,1,13
+Inbound,Strona internetowa medidesk,Strona internetowa medidesk,8,0,0,2,0,0,0,0,0,1,2,2,15
+Inbound,Strona internetowa medidesk,Umów spotkanie,0,8,2,5,1,3,4,4,4,2,1,1,35
+Inbound,Telefon na biuro,202510 Dolmed,0,0,0,0,0,0,0,0,0,1,0,0,1
+Inbound,Telefon na biuro,Telefon na biuro,1,0,2,0,0,1,0,0,1,1,0,0,6
+Inbound,Telefon na infolinie,Telefon na infolinie,0,0,0,0,0,0,0,0,0,0,0,1,1
+Inbound,Webinar,Webinar,0,1,1,2,0,0,0,0,0,0,0,0,4
+Inbound,Webinary medidesk,20250319 - Jak rozwijać placówkę,0,0,2,2,0,0,0,0,0,0,0,0,4
+Inbound,Webinary medidesk,20250409 - Webinar Marafiki,0,0,1,0,0,0,0,0,0,0,0,0,1
+Inbound,Webinary medidesk,20250604 - Pozycjonowanie i social media,0,0,0,0,0,1,0,0,0,0,0,0,1
+Inbound,Webinary medidesk,20250612 - Chirurgiczny lejek online,0,0,1,0,0,0,0,0,0,0,0,0,1
+Inbound,Webinary medidesk,20250625 - Komunikacja z pokoleniem Z,0,0,0,0,0,0,1,0,0,0,0,0,1
+Inbound,brak danych,brak danych,0,0,0,0,0,0,0,0,0,0,0,1,1
+Outbound,Akwizycja telefoniczna,Akwizycja telefoniczna,154,177,150,430,344,78,31,5,19,9,6,25,1428
+Outbound,Akwizycja telefoniczna po konferencji,Akwizycja telefoniczna po konferencji,0,0,0,0,0,0,0,0,0,0,0,1,1
+Outbound,Akwizycja telefoniczna po webinarze,Akwizycja telefoniczna po webinarze,0,0,1,5,0,2,0,0,0,0,0,0,8
+Outbound,Facebook,Facebook,0,0,0,0,0,1,0,0,0,0,0,0,1
+Outbound,Facebook po pobraniu,Facebook po pobraniu,0,0,0,0,2,1,0,0,0,0,0,0,3
+Outbound,Reinkarnacja,Reinkarnacja,7,14,2,4,3,3,3,0,0,0,2,2,40
+Outbound,brak danych,brak danych,0,1,0,0,0,1,0,0,0,0,0,0,2
+brak danych,brak danych,brak danych,8,0,0,0,0,0,0,0,0,7,45,20,80

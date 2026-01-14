@@ -1,0 +1,27 @@
+﻿# Pola Modułu: Form
+
+## Statystyki
+
+- **Łącznie pól:** 8
+- **Pola niestandardowe:** 5
+- **Pola standardowe:** 3
+- **Pola formuł:** 0
+- **Pola lookup:** 2
+- **Pola wyboru (picklist):** 2
+
+## Lista Pól
+
+| Etykieta Pola (UI)                 | Nazwa API     | Typ Danych   | Pole Niestandardowe   | Wymagane   | Tylko Odczyt   | Typ Danych (Polski)   | Możliwe Wartości                                                                                                                                                                                                                                                | Powiązany Moduł   | Maks. Długość   | Wyrażenie Formuły   | Typ Zwracany Formuły   | Sekcja   | Wartość Domyślna   |
+|:-----------------------------------|:--------------|:-------------|:----------------------|:-----------|:---------------|:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------|:----------------|:--------------------|:-----------------------|:---------|:-------------------|
+| Do                                 | Do            | date         | ✓                     |            |                | Data                  |                                                                                                                                                                                                                                                                 |                   |                 |                     |                        |          |                    |
+| Od                                 | Od            | date         | ✓                     |            |                | Data                  |                                                                                                                                                                                                                                                                 |                   |                 |                     |                        |          |                    |
+| Produkt                            | Produkt       | lookup       | ✓                     |            |                | Lookup                |                                                                                                                                                                                                                                                                 | Products          |                 |                     |                        |          |                    |
+| Status                             | Status        | picklist     | ✓                     |            |                | Lista wyboru          | -None-; Nowy Klient; W trakcie wdrożenia; Aktywny; Powrót do sprzedaży (cofka); Wstrzymane wdrożenie; Wypowiedzenie w trakcie obrony; W trakcie wypowiedzenia; Rezygnacja (wyłączony)                                                                           |                   |                 |                     |                        |          |                    |
+| Usluga                             | Usluga        | picklist     | ✓                     |            |                | Lista wyboru          | -None-; Czat z pacjentem (zewnętrzny); Czat personelu (wewnętrzny); Formularz kontaktowy; SMS; VoIP; Konto Menagerskie; VoIP + Konto Menagerskie; Voicebot; Medidesk; Medidesk Trial; Vetidesk; Vetidesk Trial; Teledesk; Wywoływanie karty pacjenta w FelgDent |                   |                 |                     |                        |          |                    |
+| Czas Utworzenia                    | Created_Time  | datetime     |                       |            |                | Data i czas           |                                                                                                                                                                                                                                                                 |                   |                 |                     |                        |          |                    |
+| Czas modyfikacji                   | Modified_Time | datetime     |                       |            |                | Data i czas           |                                                                                                                                                                                                                                                                 |                   |                 |                     |                        |          |                    |
+| Identyfikator elementu nadrzędnego | Parent_Id     | lookup       |                       |            | ✓              | Lookup                |                                                                                                                                                                                                                                                                 | Klienci           |                 |                     |                        |          |                    |
+
+---
+
+*Eksportowano z Zoho CRM API*

@@ -1,0 +1,24 @@
+﻿====================================================================================================
+POLA MODUŁU: Email_Sentiment
+====================================================================================================
+
+Łącznie pól: 8
+  - Pola niestandardowe: 0
+  - Pola standardowe: 8
+  - Pola formuł: 0
+  - Pola lookup: 1
+  - Pola wyboru (picklist): 0
+
+====================================================================================================
+
+Etykieta Pola (UI)     Nazwa API  Typ Danych Pole Niestandardowe Wymagane Tylko Odczyt Typ Danych (Polski) Możliwe Wartości Powiązany Moduł Maks. Długość Wyrażenie Formuły Typ Zwracany Formuły Sekcja Wartość Domyślna
+       Adres Email         Email       email                                                         Email                                                                                                              
+             Moduł        Module      module                                                        module                                                                                                              
+         Negatywne      Negative     integer                                              Liczba całkowita                                                                                                              
+         Neutralne       Neutral     integer                                              Liczba całkowita                                                                                                              
+         Pozytywne      Positive     integer                                              Liczba całkowita                                                                                                              
+     Received Date Received_Date    datetime                                                   Data i czas                                                                                                              
+              Seid          Seid      lookup                                                        Lookup                              NaN                                                                             
+        Użytkownik          User ownerlookup                                         ✓          Właściciel                                                                                                              
+
+====================================================================================================

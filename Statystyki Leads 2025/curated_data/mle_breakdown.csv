@@ -1,0 +1,60 @@
+﻿I_tier,II_tier,Sekcja,III_tier,Styczeń,Luty,Marzec,Kwiecień,Maj,Czerwiec,Lipiec,Sierpień,Wrzesień,Październik,Listopad,Grudzień,SUMA
+Inbound,Email na biuro,OGÓŁEM,Email na biuro,0,2,0,0,0,0,0,0,0,0,0,0,2
+Inbound,Email na biuro,bez leada,Email na biuro,0,1,0,0,0,0,0,0,0,0,0,0,1
+Inbound,Email na biuro,z leadem,Email na biuro,0,1,0,0,0,0,0,0,0,0,0,0,1
+Inbound,Facebook,OGÓŁEM,EBook Trudny Pacjent,0,0,0,66,137,68,145,103,4,0,0,0,523
+Inbound,Facebook,OGÓŁEM,EBook Zmiany w prawie marketingu medycznego,0,0,0,0,49,88,128,77,48,63,74,69,596
+Inbound,Facebook,OGÓŁEM,EBook Zyskowna przychodnia - redukcja kosztów,0,0,0,0,0,0,0,0,23,15,14,0,52
+Inbound,Facebook,OGÓŁEM,Kurs MBM Black Friday,0,0,0,0,0,0,0,0,0,0,14,0,14
+Inbound,Facebook,OGÓŁEM,Umów spotkanie FB,0,0,0,0,0,0,10,6,6,9,7,11,49
+Inbound,Facebook,bez leada,EBook Trudny Pacjent,0,0,0,32,128,66,117,8,0,0,0,0,351
+Inbound,Facebook,bez leada,EBook Zmiany w prawie marketingu medycznego,0,0,0,0,41,85,124,10,11,27,68,61,427
+Inbound,Facebook,bez leada,EBook Zyskowna przychodnia - redukcja kosztów,0,0,0,0,0,0,0,0,4,4,9,0,17
+Inbound,Facebook,bez leada,Kurs MBM Black Friday,0,0,0,0,0,0,0,0,0,0,9,0,9
+Inbound,Facebook,bez leada,Umów spotkanie FB,0,0,0,0,0,0,6,1,2,3,2,6,20
+Inbound,Facebook,z leadem,EBook Trudny Pacjent,0,0,0,34,9,2,28,95,4,0,0,0,172
+Inbound,Facebook,z leadem,EBook Zmiany w prawie marketingu medycznego,0,0,0,0,8,3,4,67,37,36,6,8,169
+Inbound,Facebook,z leadem,EBook Zyskowna przychodnia - redukcja kosztów,0,0,0,0,0,0,0,0,19,11,5,0,35
+Inbound,Facebook,z leadem,Kurs MBM Black Friday,0,0,0,0,0,0,0,0,0,0,5,0,5
+Inbound,Facebook,z leadem,Umów spotkanie FB,0,0,0,0,0,0,4,5,4,6,5,5,29
+Inbound,Polecenie,OGÓŁEM,Partner polecający,0,0,0,0,0,0,0,0,124,269,0,0,393
+Inbound,Polecenie,bez leada,Partner polecający,0,0,0,0,0,0,0,0,124,269,0,0,393
+Inbound,Strona internetowa medidesk,OGÓŁEM,Audyt Marketingowy 202503,0,0,2,40,14,6,1,0,0,0,0,0,63
+Inbound,Strona internetowa medidesk,OGÓŁEM,Audyt Tajemniczego Pacjenta 202503,0,0,0,8,3,1,4,1,1,0,11,8,37
+Inbound,Strona internetowa medidesk,OGÓŁEM,EBook Trudny Pacjent,0,0,0,2,0,0,0,0,0,0,0,0,2
+Inbound,Strona internetowa medidesk,OGÓŁEM,Integracja z Medfile,0,0,0,0,0,0,0,0,0,6,0,0,6
+Inbound,Strona internetowa medidesk,OGÓŁEM,Meddiesk 3.0,0,0,0,0,0,8,11,4,1,2,4,2,32
+Inbound,Strona internetowa medidesk,OGÓŁEM,Medidesk 3.0 Sales 20251203,0,0,0,0,0,0,0,0,0,0,0,1,1
+Inbound,Strona internetowa medidesk,OGÓŁEM,Medidesk EDU szkolenia,0,0,2,0,0,0,0,0,0,0,0,0,2
+Inbound,Strona internetowa medidesk,OGÓŁEM,Medidesk Kontakt EN,0,0,1,0,1,1,0,0,1,2,0,0,6
+Inbound,Strona internetowa medidesk,OGÓŁEM,Medidesk Kontakt PL,1,3,4,3,4,6,11,10,9,8,3,2,64
+Inbound,Strona internetowa medidesk,OGÓŁEM,SMS Campaign,0,0,0,0,0,0,0,0,0,0,1,0,1
+Inbound,Strona internetowa medidesk,OGÓŁEM,Umów spotkanie,0,15,6,10,3,7,14,9,8,10,11,9,102
+Inbound,Strona internetowa medidesk,OGÓŁEM,Webinar Marafiki 20250409,0,0,1,0,0,0,0,0,0,0,0,0,1
+Inbound,Strona internetowa medidesk,bez leada,Audyt Marketingowy 202503,0,0,2,12,6,2,1,0,0,0,0,0,23
+Inbound,Strona internetowa medidesk,bez leada,Audyt Tajemniczego Pacjenta 202503,0,0,0,3,2,1,2,0,0,0,2,4,14
+Inbound,Strona internetowa medidesk,bez leada,EBook Trudny Pacjent,0,0,0,2,0,0,0,0,0,0,0,0,2
+Inbound,Strona internetowa medidesk,bez leada,Integracja z Medfile,0,0,0,0,0,0,0,0,0,6,0,0,6
+Inbound,Strona internetowa medidesk,bez leada,Meddiesk 3.0,0,0,0,0,0,5,6,1,1,0,0,0,13
+Inbound,Strona internetowa medidesk,bez leada,Medidesk 3.0 Sales 20251203,0,0,0,0,0,0,0,0,0,0,0,1,1
+Inbound,Strona internetowa medidesk,bez leada,Medidesk EDU szkolenia,0,0,1,0,0,0,0,0,0,0,0,0,1
+Inbound,Strona internetowa medidesk,bez leada,Medidesk Kontakt EN,0,0,1,0,0,1,0,0,1,2,0,0,5
+Inbound,Strona internetowa medidesk,bez leada,Medidesk Kontakt PL,0,1,3,3,2,4,9,8,7,6,1,2,46
+Inbound,Strona internetowa medidesk,bez leada,SMS Campaign,0,0,0,0,0,0,0,0,0,0,1,0,1
+Inbound,Strona internetowa medidesk,bez leada,Umów spotkanie,0,5,5,2,1,1,4,3,2,2,2,2,29
+Inbound,Strona internetowa medidesk,bez leada,Webinar Marafiki 20250409,0,0,1,0,0,0,0,0,0,0,0,0,1
+Inbound,Strona internetowa medidesk,z leadem,Audyt Marketingowy 202503,0,0,0,28,8,4,0,0,0,0,0,0,40
+Inbound,Strona internetowa medidesk,z leadem,Audyt Tajemniczego Pacjenta 202503,0,0,0,5,1,0,2,1,1,0,9,4,23
+Inbound,Strona internetowa medidesk,z leadem,Meddiesk 3.0,0,0,0,0,0,3,5,3,0,2,4,2,19
+Inbound,Strona internetowa medidesk,z leadem,Medidesk EDU szkolenia,0,0,1,0,0,0,0,0,0,0,0,0,1
+Inbound,Strona internetowa medidesk,z leadem,Medidesk Kontakt EN,0,0,0,0,1,0,0,0,0,0,0,0,1
+Inbound,Strona internetowa medidesk,z leadem,Medidesk Kontakt PL,1,2,1,0,2,2,2,2,2,2,2,0,18
+Inbound,Strona internetowa medidesk,z leadem,Umów spotkanie,0,10,1,8,2,6,10,6,6,8,9,7,73
+Inbound,Webinar,OGÓŁEM,Webinar,0,1,0,0,0,0,0,0,0,0,0,0,1
+Inbound,Webinar,z leadem,Webinar,0,1,0,0,0,0,0,0,0,0,0,0,1
+Inbound,brak danych,OGÓŁEM,brak danych,0,0,0,0,0,0,0,0,0,0,5,2,7
+Inbound,brak danych,bez leada,brak danych,0,0,0,0,0,0,0,0,0,0,4,0,4
+Inbound,brak danych,z leadem,brak danych,0,0,0,0,0,0,0,0,0,0,1,2,3
+Outbound,brak danych,OGÓŁEM,brak danych,1,1,0,0,0,7,0,0,0,1,0,0,10
+Outbound,brak danych,bez leada,brak danych,1,0,0,0,0,6,0,0,0,1,0,0,8
+Outbound,brak danych,z leadem,brak danych,0,1,0,0,0,1,0,0,0,0,0,0,2

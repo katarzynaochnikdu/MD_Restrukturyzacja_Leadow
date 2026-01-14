@@ -1,0 +1,42 @@
+﻿# Pola Modułu: Email_Analytics
+
+## Statystyki
+
+- **Łącznie pól:** 23
+- **Pola niestandardowe:** 0
+- **Pola standardowe:** 23
+- **Pola formuł:** 0
+- **Pola lookup:** 0
+- **Pola wyboru (picklist):** 1
+
+## Lista Pól
+
+| Etykieta Pola (UI)        | Nazwa API             | Typ Danych   | Pole Niestandardowe   | Wymagane   | Tylko Odczyt   | Typ Danych (Polski)   | Możliwe Wartości                               | Powiązany Moduł   | Maks. Długość   | Wyrażenie Formuły   | Typ Zwracany Formuły   | Sekcja   | Wartość Domyślna   |
+|:--------------------------|:----------------------|:-------------|:----------------------|:-----------|:---------------|:----------------------|:-----------------------------------------------|:------------------|:----------------|:--------------------|:-----------------------|:---------|:-------------------|
+| Call Missed               | Call_Missed           | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Call Received             | Call_Received         | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Checkins                  | Checkins              | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Data                      | Date                  | datetime     |                       |            |                | Data i czas           |                                                |                   |                 |                     |                        |          |                    |
+| Dialled Attended          | Dialled_Attended      | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Dialled UnAttended        | Dialled_UnAttended    | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Entity Source             | Entity_Source         | module       |                       |            |                | module                |                                                |                   |                 |                     |                        |          |                    |
+| Event Duration            | Event_Duration        | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Kliknięty                 | Clicked               | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Kwota                     | Amount                | currency     |                       |            |                | Waluta                |                                                |                   |                 |                     |                        |          |                    |
+| Mail Source               | Mail_Source           | picklist     |                       |            |                | Lista wyboru          | -None-; Individual; WorkFlow Alert; Mass Email |                   |                 |                     |                        |          |                    |
+| Odebrano                  | Received              | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Odrzucony                 | Bounced               | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Otwarty                   | Opened                | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Przesłane                 | Sent                  | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Task Completed            | Task_Completed        | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Total Call Duration       | Total_Call_Duration   | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Udzielono odpowiedzi      | Replied               | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Użytkownik                | User                  | ownerlookup  |                       |            | ✓              | Właściciel            |                                                |                   |                 |                     |                        |          |                    |
+| Wiadomość przesłana       | Responded             | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Wydarzenia                | Events_Created        | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Zwrócone wśród śledzonych | Bounced_Among_Tracked | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+| Śledzone                  | Tracked               | integer      |                       |            |                | Liczba całkowita      |                                                |                   |                 |                     |                        |          |                    |
+
+---
+
+*Eksportowano z Zoho CRM API*

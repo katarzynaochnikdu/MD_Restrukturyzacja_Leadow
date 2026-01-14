@@ -1,0 +1,30 @@
+﻿# Pola Modułu: Grupy_produktowe
+
+## Statystyki
+
+- **Łącznie pól:** 11
+- **Pola niestandardowe:** 1
+- **Pola standardowe:** 10
+- **Pola formuł:** 0
+- **Pola lookup:** 0
+- **Pola wyboru (picklist):** 1
+
+## Lista Pól
+
+| Etykieta Pola (UI)          | Nazwa API          | Typ Danych        | Pole Niestandardowe   | Wymagane   | Tylko Odczyt   | Typ Danych (Polski)   | Możliwe Wartości                                                                                                                   | Powiązany Moduł   | Maks. Długość   | Wyrażenie Formuły   | Typ Zwracany Formuły   | Sekcja   | Wartość Domyślna   |
+|:----------------------------|:-------------------|:------------------|:----------------------|:-----------|:---------------|:----------------------|:-----------------------------------------------------------------------------------------------------------------------------------|:------------------|:----------------|:--------------------|:-----------------------|:---------|:-------------------|
+| Produkt                     | Produkt            | multiselectlookup | ✓                     |            |                | multiselectlookup     |                                                                                                                                    |                   |                 |                     |                        |          |                    |
+| Czas Utworzenia             | Created_Time       | datetime          |                       |            |                | Data i czas           |                                                                                                                                    |                   |                 |                     |                        |          |                    |
+| Czas anulowania subskrypcji | Unsubscribed_Time  | datetime          |                       |            | ✓              | Data i czas           |                                                                                                                                    |                   |                 |                     |                        |          |                    |
+| Czas modyfikacji            | Modified_Time      | datetime          |                       |            |                | Data i czas           |                                                                                                                                    |                   |                 |                     |                        |          |                    |
+| Czas ostatniej aktywności   | Last_Activity_Time | datetime          |                       |            |                | Data i czas           |                                                                                                                                    |                   |                 |                     |                        |          |                    |
+| Grupa produktowa            | Name               | text              |                       |            |                | Tekst                 |                                                                                                                                    |                   | 120             |                     |                        |          |                    |
+| Grupa produktowa Właściciel | Owner              | ownerlookup       |                       |            |                | Właściciel            |                                                                                                                                    |                   |                 |                     |                        |          |                    |
+| Locked                      | Locked__s          | boolean           |                       |            | ✓              | Checkbox (Boolean)    |                                                                                                                                    |                   |                 |                     |                        |          |                    |
+| Obraz Grupa produktowa      | Record_Image       | profileimage      |                       |            |                | profileimage          |                                                                                                                                    |                   |                 |                     |                        |          |                    |
+| Tryb anulowania subskrypcji | Unsubscribed_Mode  | picklist          |                       |            | ✓              | Lista wyboru          | Formularz zgody (Consent form); Ręcznie (Manual); Łącze anulowania subskrypcji (Unsubscribe link); Zoho Campaigns (Zoho campaigns) |                   |                 |                     |                        |          |                    |
+| Znacznik                    | Tag                | text              |                       |            |                | Tekst                 |                                                                                                                                    |                   | 2000            |                     |                        |          |                    |
+
+---
+
+*Eksportowano z Zoho CRM API*

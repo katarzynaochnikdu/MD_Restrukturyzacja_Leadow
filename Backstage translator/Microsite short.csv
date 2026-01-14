@@ -1,0 +1,144 @@
+﻿Reference Key;Default Language;pl
+(Unique key that helps you identify a field);(Base language of your website content);(Language that you are translating)
+lbl.login;Sign In;Zaloguj się
+lbl.login.with.mail;Sign in with Email Address;Zaloguj się przy użyciu adresu e-mail
+lbl.login.with.ticket;Sign in with Ticket ID;Zaloguj się przy użyciu identyfikatora biletu
+lbl.login.with.ticket.and.name;Sign in with Ticket ID and Name;Zaloguj się przy użyciu identyfikatora biletu i nazwiska
+msg.sign.in.first.last.name;First or last name;Imię lub nazwisko
+msg.sign.in.magic.link.otp;Sign in with a magic link or OTP;Zaloguj się za pomocą magicznego linku lub kodu OTP
+lbl.email.address;Email Address;Adres e-mail
+msg.err.register.to.login;Please enter the email address you've registered with;Wprowadź adres e-mail, którym się zarejestrowałeś
+msg.error.ticket.not.found;Can't find ticket ID;Nie mogę znaleźć identyfikatora biletu
+msg.error.ticket.sign.in.not.allowed;You can't sign in using ticket ID. Please contact your event organizer for more details.;Nie możesz zalogować się przy użyciu identyfikatora biletu. Skontaktuj się z organizatorem wydarzenia, aby uzyskać więcej informacji.
+msg.permission.no.resource;We're sorry, either this resource has been deleted or you don't have permission to access it.;Przepraszamy, zasób został usunięty lub nie masz uprawnień do jego wyświetlenia.
+msg.otp.can.only.be.in.numbers;The OTP can only be in numbers;Kod OTP może zawierać tylko cyfry
+msg.error.enter.otp.received.via.mail;Please enter the OTP received via email;Wprowadź kod OTP otrzymany e-mailem
+msg.error.otp.too.long;The OTP can't exceed 7 characters;Kod OTP nie może przekraczać 7 znaków
+msg.error.otp.not.valid;The OTP you entered is not valid;Wprowadzony kod OTP jest nieprawidłowy
+msg.error.otp.blocked;You have entered an incorrect OTP multiple times. Try regenerating a new OTP after {blockedTime} mins.;Wprowadzono nieprawidłowy kod OTP kilka razy. Spróbuj wygenerować nowy po {blockedTime} minutach.
+msg.error.attendee.name.invalid;Attendee name is invalid for the ticket.;Nazwa uczestnika jest nieprawidłowa dla tego biletu.
+msg.email.login.benefits.attend.live.sessions;Attend live sessions;Weź udział w sesjach na żywo
+msg.email.login.benefits.edit.ticket.information;Edit ticket information;Edytuj dane biletu
+msg.email.login.benefits.upload.images;Upload event images in gallery;Prześlij zdjęcia wydarzenia do galerii
+msg.email.login.benefits.participate.discussions;Participate in discussions;Weź udział w dyskusjach
+msg.email.login.benefits.customize.profile;Customize your profile;Dostosuj swój profil
+msg.email.login.benefits.customize.privacy;Customize privacy settings;Dostosuj ustawienia prywatności
+msg.email.login.benefits.one.on.one.chat;One-on-one chat;Czat jeden na jeden
+msg.email.vs.ticket.modal.confirm.email.sub.header;Sign in with your email address to get the most out of this event;Zaloguj się przy użyciu adresu e-mail, aby w pełni korzystać z wydarzenia
+msg.check.out.benefits.email.vs.ticket;Check out the benefits of these sign-in options;Sprawdź korzyści z tych metod logowania
+msg.error.checkin.unpaid.ticket.not.allowed;Checking in attendees with unpaid tickets is restricted for this event;Rejestracja uczestników z nieopłaconymi biletami jest niedozwolona dla tego wydarzenia
+msg.ticket.id.login.email.id;You have signed in with the {ticketId} ticket ID that is associated to below email address;Zalogowałeś się przy użyciu identyfikatora biletu {ticketId}, który jest powiązany z poniższym adresem e-mail
+msg.compare.ticket.class.benefits;Compare ticket class benefits;Porównaj korzyści kategorii biletów
+lbl.resend.magic.link;Resend Magic Link;Wyślij ponownie magiczny link
+msg.err.exprd.prspct.login.lnk;Oops! Looks like this link has expired.  Please try signing again with your email address or ticket ID and head to Profile Settings to change your email settings.;Ups! Wygląda na to, że ten link wygasł. Spróbuj ponownie zalogować się za pomocą adresu e-mail lub identyfikatora biletu i przejdź do ustawień profilu, aby zmienić ustawienia e-mail.
+msg.err.sign.in.fail;Sorry, you couldn't be signed in to the website.  Please try again later.;Przepraszamy, nie udało się zalogować na stronie. Spróbuj ponownie później.
+msg.err.exprd.regen.magic.lnk;Oops! Looks like the magic link has expired.  Please try signing again with your email address or ticket ID.;Ups! Wygląda na to, że magiczny link wygasł. Spróbuj zalogować się ponownie za pomocą adresu e-mail lub identyfikatora biletu.
+msg.err.regen.magic.lnk;Oops! Looks like the magic link has expired. You can sign in again with your email address or ticket ID, or simply request for the magic link again.;Ups! Wygląda na to, że magiczny link wygasł. Możesz zalogować się ponownie za pomocą adresu e-mail lub identyfikatora biletu, albo ponownie poprosić o link.
+msg.ticket.id.invalid;You have entered an invalid ticket ID;Wprowadziłeś nieprawidłowy identyfikator biletu
+lbl.enter.otp;Enter OTP;Wprowadź kod OTP
+lbl.enter.ticket.id;Enter Your Ticket ID;Wprowadź swój identyfikator biletu
+msg.tkt.otp.reassign.success;Ticket has been assigned to your email address {emailId};Bilet został przypisany do Twojego adresu e-mail {emailId}
+msg.err.otp.long;OTP is too long;Kod OTP jest zbyt długi
+msg.err.otp.not.int;OTP must be a number;Kod OTP musi być liczbą
+msg.err.otp.not.empty;OTP can't be empty;Kod OTP nie może być pusty
+msg.tkt.otp.sent.to;We've sent an OTP to {emailId};Wysłaliśmy kod OTP na adres {emailId}
+lbl.resend;Resend;Wyślij ponownie
+msg.ticket.otp.sent.to;OTP will be sent to this email address;Kod OTP zostanie wysłany na ten adres e-mail
+msg.enter.otp;Enter your OTP to verify;Wprowadź kod OTP, aby potwierdzić
+lbl.otp.expires.in;OTP Expires In;Kod OTP wygaśnie za
+lbl.resend.code;Resend Code;Wyślij kod ponownie
+msg.event.sign.in.description;Sign in to the website to participate in the event;Zaloguj się na stronie, aby wziąć udział w wydarzeniu
+lbl.enter.email.or.ticket.id;Email Address or Ticket ID;Adres e-mail lub identyfikator biletu
+msg.email.or.ticket.id;Email or Ticket ID;E-mail lub identyfikator biletu
+msg.sent.sign.in.email;We've just sent a sign-in email to <strong>{emailId}</strong>;Właśnie wysłaliśmy e-mail logowania na adres {emailId}
+lbl.done;Done;Gotowe
+lbl.check.inbox;Check Your Inbox!;Sprawdź swoją skrzynkę odbiorczą!
+lbl.or;OR;LUB
+msg.error.attendee.ticket.id.enter;Ticket ID cannot be empty;Identyfikator biletu nie może być pusty
+format.datetime.different.days.same.month.same.year;{startDate[MMM D]} to {endDate[D, YYYY]};
+format.datetime.different.days.different.month.same.year;{startDate[MMM D]} to {endDate[MMM D, YYYY]};
+format.datetime.different.days.different.month.different.year;{startDate[MMM DD, YYYY]} to {endDate[MMM DD, YYYY]};
+format.start.time.end.time.with.timezone;{startDate [hh:mm A]} - {endDate[hh:mm A (z)]};
+format.agenda.datetime.same.day;{startDate[ddd, MMM DD, YYYY]};
+format.agenda.datetime.different.days.same.month.same.year;{startDate[MMM DD]} - {endDate[DD]};
+format.agenda.datetime.different.days.different.month.same.year;{startDate[MMM DD]} - {endDate[MMM DD]};
+format.agenda.datetime.different.days.different.month.different.year;{startDate[MMM DD]} - {endDate[MMM DD]};
+format.agenda.calendar.datetime.same.day;{startDate[ddd, MMM DD, YYYY]};
+format.agenda.calendar.datetime.different.days.same.month.same.year;{startDate[ddd, MMM DD]} - {endDate[ddd, MMM DD]};
+format.agenda.calendar.datetime.different.days.different.month.same.year;{startDate[ddd, MMM DD]} - {endDate[ddd, MMM DD]};
+format.agenda.calendar.datetime.different.days.different.month.different.year;{startDate[ddd, MMM DD]} - {endDate[ddd, MMM DD]};
+format.agenda.printer.datetime.same.day;{startDate[dddd, MMMM DD, YYYY]};
+format.agenda.printer.datetime.different.days.same.month.same.year;{startDate[MMMM DD]} - {endDate[DD, YYYY]};
+format.agenda.printer.datetime.different.days.different.month.same.year;{startDate[MMMM DD]} - {endDate[MMMM DD, YYYY]};
+format.agenda.printer.datetime.different.days.different.month.different.year;{startDate[MMMM DD, YYYY]} - {endDate[MMMM DD, YYYY]};
+lbl.ticket.id;Ticket ID;
+msg.event.created.using;This event was created using Zoho Backstage;
+msg.create.your.event;Create your event now;
+lbl.powered.by;Powered By;
+lbl.time.zone;Time Zone;
+lbl.timezone;Timezone;
+lbl.more;More;
+lbl.change;Change;
+lbl.cancel;Cancel;
+lbl.cancelled;Cancelled;
+lbl.more.details;Learn More;
+lbl.nonfunctional.cookies;Non Functional Cookies;
+msg.basic.cookies.accordionpanel;These cookies are necessary for our website to function properly. They store data when you perform certain actions like updating details or requesting for services like setting up your privacy preferences, filling up forms, or signing into the website. This option can't be switched off in our systems.;
+msg.nonfunctional.cookies.accordionpanel;These cookies are necessary to identify visitors and understand their behavior on your website. They track visitors view over a period of time to find out which pages are popular. This data is collected anonymously and is used to measure and optimize your website experience.;
+msg.cookie.setting.content;When you visit our website, it may store or retrieve information from your browser in the form of cookies. This information might be about you, your preferences, or device-related settings and is used to make the website work  more efficiently and give you a personalized web experience. The personal information collected is done so anonymously.;
+msg.dialog.box.desc;This website utilizes cookies to improve performance and provide you with an optimized experience;
+lbl.click.different.cookie.categories;Click on the Different Cookie Categories to Find out More.;
+lbl.mode.of.attending;Mode of Attending;
+lbl.venue.only;Venue Only;
+lbl.online.only;Online Only;
+lbl.venue.and.online;Venue and Online;
+lbl.ticket.class.name;Ticket Class Name;
+lbl.order.req.placed;Order Request Placed;
+msg.order.req.succ.subtitle;Your order request has been sent and will be listed in the <i>Your order requests</i> page. You will receive an email when the event organizer responds to your request.;
+msg.your.order.requests.header;Your order requests for the <strong>{eventName}</strong> event;
+msg.no.orders.req.empty;There are no order requests for this event;
+msg.your.orders.req.complete.empty;You have already placed an order request with <strong>{attendeeEmailAddress}</strong> for this event which was accepted by the event organizer. To view your completed order, go to the <strong>Your orders</strong> page. Use this page if you want to place another order request for someone else with a different email address.;
+msg.confirm.withdraw.order.request;This action will revoke your order request for this event. If you want to attend this event again, you will have to send a new request.;
+lbl.manage.registration;Manage Registration;
+lbl.return.to.home;Return to Home;
+lbl.print.agenda.title;Agenda for {eventName};
+lbl.page.setup;Page Setup;
+lbl.landscape;Landscape;
+lbl.portrait;Portrait;
+lbl.a4.dimension;A4 ({dimension});
+lbl.a3.dimension;A3 ({dimension});
+lbl.a5.dimension;A5 ({dimension});
+lbl.letter.dimension;Letter ({dimension});
+lbl.legal.dimension;Legal ({dimension});
+msg.added;Added;
+lbl.add.to.my.sessions;Add to My Sessions;
+lbl.view.all.speakers;View All Speakers;
+lbl.address;Address;
+msg.sh.exhibitor.category.description;Exhibitor categories and their benefits will be displayed here;
+lbl.all.exhibitors;All Exhibitors;
+lbl.my.list;My List;
+lbl.for.exhibitors;For Exhibitors;
+lbl.share.contact.details;Share Contact Details;
+msg.share.mobile.number;Share my phone number;
+msg.share.details.modal.desc;On entering this booth, your name, email address, designation, and company information will be shared with the exhibitor.;
+msg.exhibitor.inquiry.info;You can edit or delete your inquiries from this page at any time before the event ends.;
+lbl.edit;Edit;
+lbl.add.session.note;Add Session Notes;
+lbl.add.exhibitor.note;Add Exhibitor Notes;
+lbl.add.speaker.note;Add Speaker Notes;
+msg.configure.meeting.slot.for;Configure meeting slot for {day};
+lbl.delete.meeting.availability;Delete Meeting Availability;
+lbl.lounges;Lounges;
+lbl.all.lounges;All Lounges;
+lbl.lounge.background;Lounge Background;
+lbl.no.appointments.booked;No Appointments Booked;
+msg.error.lead.first.name.empty;Please enter the first name;
+msg.error.user.first.name.invalid;First name can't include < and >;
+msg.error.user.first.name.too.long;First name can't exceed 50 characters;
+msg.error.user.last.name.too.long;Last name can't exceed 50 characters;
+msg.error.user.last.name.invalid;Last name can't include < and >;
+msg.error.lead.contact.number.empty;Please enter the contact number;
+msg.error.user.contact.number.invalid;The contact number can include only numbers;
+msg.error.user.contact.number.too.long;Contact number can't exceed 15 characters;
+msg.error.user.designation.too.long;Designation can't exceed 50 characters;
+msg.error.user.designation.invalid;Designation can't include < and >;

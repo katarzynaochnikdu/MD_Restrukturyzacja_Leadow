@@ -1,0 +1,7 @@
+# Dodatkowe domeny do ignorowania przy dopasowaniu firm
+# Każda domena w osobnej linii (bez @, tylko domena)
+# Linie zaczynające się od # są komentarzami
+
+# Dodane automatycznie przez użytkownika podczas przetwarzania:
+
+medidesk.pl

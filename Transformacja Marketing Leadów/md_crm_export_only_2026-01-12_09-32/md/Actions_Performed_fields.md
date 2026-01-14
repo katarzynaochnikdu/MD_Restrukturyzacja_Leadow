@@ -1,0 +1,26 @@
+﻿# Pola Modułu: Actions_Performed
+
+## Statystyki
+
+- **Łącznie pól:** 7
+- **Pola niestandardowe:** 0
+- **Pola standardowe:** 7
+- **Pola formuł:** 0
+- **Pola lookup:** 2
+- **Pola wyboru (picklist):** 0
+
+## Lista Pól
+
+| Etykieta Pola (UI)                 | Nazwa API             | Typ Danych   | Pole Niestandardowe   | Wymagane   | Tylko Odczyt   | Typ Danych (Polski)   | Możliwe Wartości   | Powiązany Moduł   | Maks. Długość   | Wyrażenie Formuły   | Typ Zwracany Formuły   | Sekcja   | Wartość Domyślna   |
+|:-----------------------------------|:----------------------|:-------------|:----------------------|:-----------|:---------------|:----------------------|:-------------------|:------------------|:----------------|:--------------------|:-----------------------|:---------|:-------------------|
+| Chat Attachment                    | Chat_Attachment       | lookup       |                       |            |                | Lookup                |                    | Attachments       |                 |                     |                        |          |                    |
+| Działania                          | Actions               | website      |                       |            |                | URL                   |                    |                   |                 |                     |                        |          |                    |
+| Godziny wykonania działania        | Action_Performed_Time | datetime     |                       |            |                | Data i czas           |                    |                   |                 |                     |                        |          |                    |
+| Identyfikator elementu nadrzędnego | Parent_Id             | lookup       |                       |            |                | Lookup                |                    | Visits            |                 |                     |                        |          |                    |
+| Odwiedzona strona                  | Visited_Page          | textarea     |                       |            |                | Tekst wielowierszowy  |                    |                   | 3000            |                     |                        |          |                    |
+| Time Spent                         | Time_Spent            | double       |                       |            |                | double                |                    |                   |                 |                     |                        |          |                    |
+| Typ działania                      | Action_Type           | text         |                       |            |                | Tekst                 |                    |                   | 250             |                     |                        |          |                    |
+
+---
+
+*Eksportowano z Zoho CRM API*

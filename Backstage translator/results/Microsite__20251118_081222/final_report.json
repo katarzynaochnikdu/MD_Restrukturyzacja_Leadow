@@ -1,0 +1,39 @@
+{
+  "total_rows": 3149,
+  "translated_rows": 3149,
+  "with_placeholders": 371,
+  "confidence_histogram": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 3,
+    "5": 3146
+  },
+  "total_issues": {
+    "fixed:Nieprawidłowa odmiana liczby mnogiej po liczebniku": 1
+  },
+  "verified_count": 1,
+  "fixed_count": 1,
+  "critical_fixed_keys": [
+    "lbl.count.handout"
+  ],
+  "output_files": {
+    "input_copy": "results\\Microsite__20251118_081222\\Microsite.csv",
+    "log": "results\\Microsite__20251118_081222\\run.log",
+    "phase1_requests": "results\\Microsite__20251118_081222\\phase1_requests.jsonl",
+    "phase1_responses": "results\\Microsite__20251118_081222\\phase1_responses.jsonl",
+    "phase3_requests": "results\\Microsite__20251118_081222\\phase3_requests.jsonl",
+    "phase3_responses": "results\\Microsite__20251118_081222\\phase3_responses.jsonl",
+    "csv": "results\\Microsite__20251118_081222\\Microsite.translated.csv",
+    "xlsx": "results\\Microsite__20251118_081222\\Microsite.translated.xlsx"
+  },
+  "phase1_input_tokens": 831566,
+  "phase1_output_tokens": 261388,
+  "phase1_cached_tokens": 0,
+  "phase1_cost_usd": 4.692795,
+  "phase3_input_tokens": 150,
+  "phase3_output_tokens": 161,
+  "phase3_cached_tokens": 0,
+  "phase3_cost_usd": 0.0019850000000000002,
+  "total_cost_usd": 4.694780000000001
+}

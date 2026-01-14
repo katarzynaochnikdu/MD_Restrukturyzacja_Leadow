@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoho Data Cleanup - Web GUI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .fade-in { animation: fadeIn 0.4s ease-out; }
+        .pulse { animation: pulse 2s infinite; }
+        .field-row { transition: all 0.2s; }
+        .field-row:hover { background-color: #f9fafb; transform: translateX(4px); }
+        .conflict-marker { border-left: 5px solid #f59e0b; background: #fffbeb; }
+        .selected-field { border-color: #6366f1; background: #eef2ff; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 min-h-screen">
+    
+    <!-- Professional Header -->
+    <div class="bg-white shadow-xl border-b-4 border-indigo-600">
+        <div class="container mx-auto px-8 py-5">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-5">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+                        <i class="fas fa-database text-3xl text-white"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-black text-gray-800 tracking-tight">Zoho Data Cleanup</h1>
+                        <p class="text-sm text-gray-600 font-medium">Profesjonalne scalanie duplikatów w Zoho CRM</p>
+                    </div>
+                </div>
+                <div class="text-right flex items-center space-x-4">
+                    <button onclick="openLogs()" id="logs-button" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg font-semibold transition-colors" style="display: none;">
+                        <i class="fas fa-file-alt mr-2"></i>
+                        Otwórz logi
+                    </button>
+                    <div class="inline-flex items-center px-5 py-3 rounded-xl shadow-lg" id="mode-badge-container">
+                        <i class="fas fa-shield-alt mr-3 text-xl"></i>
+                        <div>
+                            <div class="text-xs font-semibold opacity-75">Tryb:</div>
+                            <div class="text-sm font-bold" id="mode-badge">Inicjalizacja...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Initialization Screen -->
+    <div class="container mx-auto px-8 py-16" id="init-screen">
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+                <!-- Init Header -->
+                <div class="bg-gradient-to-r from-indigo-600 to-purple-600 p-10 text-white text-center">
+                    <div class="w-24 h-24 mx-auto mb-6 bg-white/20 rounded-full flex items-center justify-center">
+                        <i class="fas fa-cogs text-5xl"></i>
+                    </div>
+                    <h2 class="text-4xl font-black mb-3">Konfiguracja systemu</h2>
+                    <p class="text-indigo-100 text-lg">Ustaw parametry przed rozpoczęciem</p>
+                </div>
+                
+                <!-- Init Form -->
+                <div class="p-10 space-y-8">
+                    <!-- Tryb pracy -->
+                    <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 border-2 border-gray-200">
+                        <label class="block text-lg font-bold text-gray-800 mb-4 flex items-center">
+                            <i class="fas fa-toggle-on text-indigo-600 mr-3"></i>
+                            Tryb pracy
+                        </label>
+                        <select id="init-dry-run" class="w-full px-6 py-4 border-3 border-gray-300 rounded-xl text-lg font-semibold focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 transition-all">
+                            <option value="true">🛡️ DRY-RUN (Symulacja - bezpieczne, zalecane)</option>
+                            <option value="false">⚠️ PRODUKCJA (Faktyczne zmiany w Zoho!)</option>
+                        </select>
+                        <p class="text-sm text-gray-600 mt-3 ml-1">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            DRY-RUN nie zapisuje zmian - tylko pokazuje co zostanie zrobione
+                        </p>
+                    </div>
+                    
+                    <!-- Limit -->
+                    <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 border-2 border-gray-200">
+                        <label class="block text-lg font-bold text-gray-800 mb-4 flex items-center">
+                            <i class="fas fa-hashtag text-indigo-600 mr-3"></i>
+                            Limit par duplikatów
+                        </label>
+                        <input type="number" id="init-limit" value="10" min="1" max="1000" 
+                               class="w-full px-6 py-4 border-3 border-gray-300 rounded-xl text-lg font-semibold focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 transition-all">
+                        <div class="mt-4 space-y-2 text-sm text-gray-600">
+                            <div><i class="fas fa-lightbulb text-yellow-500 mr-2"></i> <strong>10</strong> - Zalecane dla pierwszego testu</div>
+                            <div><i class="fas fa-flask text-blue-500 mr-2"></i> <strong>100</strong> - Rozszerzony test</div>
+                            <div><i class="fas fa-rocket text-purple-500 mr-2"></i> <strong>500+</strong> - Produkcja (pełna baza)</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Start Button -->
+                    <button onclick="initializeSystem()" 
+                            class="w-full px-8 py-6 bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:from-green-600 hover:via-green-700 hover:to-green-800 text-white rounded-2xl font-black text-2xl shadow-2xl transition-all transform hover:scale-[1.02] active:scale-[0.98]">
+                        <i class="fas fa-play-circle mr-3 text-3xl"></i>
+                        ROZPOCZNIJ SKANOWANIE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Interface -->
+    <div class="container mx-auto px-8 py-10" id="main-interface" style="display: none;">
+        
+        <!-- Progress Section -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold text-gray-800 flex items-center">
+                    <i class="fas fa-tasks mr-3 text-indigo-600"></i>
+                    Postęp scalania
+                </h3>
+                <div class="text-2xl font-black text-indigo-600" id="progress-text">0 / 0</div>
+            </div>
+            
+            <!-- Progress Bar -->
+            <div class="w-full bg-gray-200 rounded-full h-6 shadow-inner mb-6">
+                <div id="progress-bar" class="bg-gradient-to-r from-green-400 via-green-500 to-green-600 h-6 rounded-full transition-all duration-500 flex items-center justify-end pr-4" style="width: 0%">
+                    <span class="text-white text-xs font-bold" id="progress-percent">0%</span>
+                </div>
+            </div>
+            
+            <!-- Statistics Cards -->
+            <div class="grid grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-5 border-2 border-blue-200">
+                    <div class="text-4xl font-black text-blue-600 mb-2" id="stat-total">0</div>
+                    <div class="text-sm text-blue-700 font-semibold">Łącznie par</div>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-5 border-2 border-green-200">
+                    <div class="text-4xl font-black text-green-600 mb-2" id="stat-simple">0</div>
+                    <div class="text-sm text-green-700 font-semibold">
+                        <i class="fas fa-bolt mr-1"></i>Proste
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-5 border-2 border-orange-200">
+                    <div class="text-4xl font-black text-orange-600 mb-2" id="stat-complex">0</div>
+                    <div class="text-sm text-orange-700 font-semibold">
+                        <i class="fas fa-exclamation-triangle mr-1"></i>Złożone
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-5 border-2 border-purple-200">
+                    <div class="text-4xl font-black text-purple-600 mb-2" id="stat-done">0</div>
+                    <div class="text-sm text-purple-700 font-semibold">
+                        <i class="fas fa-check mr-1"></i>Ukończone
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Auto-Merge Panel -->
+        <div class="bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl shadow-2xl p-8 mb-8 text-white" id="auto-merge-panel" style="display: none;">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-6">
+                    <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center">
+                        <i class="fas fa-magic text-5xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-black mb-2">Auto-scalanie dostępne!</h3>
+                        <p class="text-green-100 text-lg">Wykryto <span id="auto-count-text" class="font-bold">0</span> prostych przypadków (slave score &lt; 5)</p>
+                        <p class="text-green-50 text-sm mt-1">Możesz scalić je automatycznie jednym kliknięciem</p>
+                    </div>
+                </div>
+                <button onclick="approveAllSimple()" class="px-10 py-5 bg-white text-green-600 rounded-2xl font-black text-xl hover:bg-green-50 transition-all transform hover:scale-105 shadow-2xl">
+                    <i class="fas fa-bolt mr-3"></i>
+                    SCALIĆ WSZYSTKIE PROSTE
+                </button>
+            </div>
+        </div>
+
+        <!-- Current Pair Card -->
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden fade-in" id="merge-card">
+            
+            <!-- Header with gradient -->
+            <div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 p-8">
+                <div class="flex items-center justify-between text-white">
+                    <div class="flex-1">
+                        <div class="text-sm font-semibold opacity-90 mb-2">GRUPA DUPLIKATÓW</div>
+                        <h2 class="text-4xl font-black mb-2" id="merge-title">Ładowanie...</h2>
+                        <div class="flex items-center space-x-4 text-indigo-100">
+                            <span id="merge-subtitle" class="text-lg font-semibold">Przygotowywanie danych...</span>
+                            <span id="safe-badge" class="px-4 py-2 bg-green-500/30 rounded-lg backdrop-blur text-sm font-bold" style="display: none;">
+                                <i class="fas fa-check-circle mr-2"></i>PROSTE SCALENIE
+                            </span>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-6xl font-black opacity-20" id="pair-number">1/15</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Master vs Slave Comparison -->
+            <div class="p-10">
+                <div class="grid grid-cols-2 gap-10 mb-10">
+                    
+                    <!-- MASTER -->
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-xl z-10">
+                            <i class="fas fa-crown text-3xl text-white"></i>
+                        </div>
+                        <div class="border-4 border-green-500 rounded-2xl p-8 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 shadow-xl">
+                            <div class="mb-6">
+                                <div class="text-xs font-bold text-green-700 uppercase tracking-wider mb-2">Master (Zachowaj)</div>
+                                <div class="flex items-end justify-between">
+                                    <h3 class="text-2xl font-black text-gray-900 leading-tight" id="master-name">-</h3>
+                                    <div class="text-right">
+                                        <div class="text-6xl font-black text-green-600" id="master-score">-</div>
+                                        <div class="text-xs text-green-700 font-bold">SCORE</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="bg-white rounded-lg p-4 shadow">
+                                    <div class="text-xs text-gray-500 font-semibold mb-1">ID REKORDU</div>
+                                    <div class="font-mono text-sm text-gray-800 font-bold" id="master-id">-</div>
+                                </div>
+                                <div class="bg-white rounded-lg p-4 shadow" id="master-details">
+                                    <div class="text-xs text-gray-500 font-semibold mb-2">SZCZEGÓŁY</div>
+                                    <div class="space-y-1 text-sm" id="master-info">
+                                        <div><span class="text-gray-600">NIP:</span> <span id="master-nip" class="font-semibold">-</span></div>
+                                        <div><span class="text-gray-600">Wypełnionych pól:</span> <span id="master-fields" class="font-semibold">-</span></div>
+                                        <div><span class="text-gray-600">Powiązań:</span> <span id="master-relations" class="font-semibold">-</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLAVE -->
+                    <div class="relative">
+                        <div class="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center shadow-xl z-10">
+                            <i class="fas fa-compress-arrows-alt text-3xl text-white"></i>
+                        </div>
+                        <div class="border-4 border-orange-500 rounded-2xl p-8 bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 shadow-xl">
+                            <div class="mb-6">
+                                <div class="text-xs font-bold text-orange-700 uppercase tracking-wider mb-2">Slave (Scal i usuń)</div>
+                                <div class="flex items-end justify-between">
+                                    <h3 class="text-2xl font-black text-gray-900 leading-tight" id="slave-name">-</h3>
+                                    <div class="text-right">
+                                        <div class="text-6xl font-black text-orange-600" id="slave-score">-</div>
+                                        <div class="text-xs text-orange-700 font-bold">SCORE</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="bg-white rounded-lg p-4 shadow">
+                                    <div class="text-xs text-gray-500 font-semibold mb-1">ID REKORDU</div>
+                                    <div class="font-mono text-sm text-gray-800 font-bold" id="slave-id">-</div>
+                                </div>
+                                <div class="bg-white rounded-lg p-4 shadow">
+                                    <div class="text-xs text-gray-500 font-semibold mb-2">SZCZEGÓŁY</div>
+                                    <div class="space-y-1 text-sm" id="slave-info">
+                                        <div><span class="text-gray-600">NIP:</span> <span id="slave-nip" class="font-semibold">-</span></div>
+                                        <div><span class="text-gray-600">Wypełnionych pól:</span> <span id="slave-fields" class="font-semibold">-</span></div>
+                                        <div><span class="text-gray-600">Powiązań:</span> <span id="slave-relations" class="font-semibold">-</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fields Editor Table -->
+                <div class="mb-10">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl font-black text-gray-800 flex items-center">
+                            <i class="fas fa-table text-indigo-600 mr-4"></i>
+                            Edytor pól
+                        </h3>
+                        <div class="text-sm text-gray-600">
+                            <span class="inline-block px-3 py-1 bg-orange-100 text-orange-800 rounded-lg font-semibold mr-2">
+                                <i class="fas fa-exclamation-triangle mr-1"></i>
+                                <span id="conflicts-count">0</span> konfliktów
+                            </span>
+                            <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-lg font-semibold">
+                                <i class="fas fa-edit mr-1"></i>
+                                <span id="edited-count">0</span> edytowanych
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- LEGENDA -->
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-indigo-200 rounded-xl p-5 mb-4">
+                        <div class="flex items-start space-x-8">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-info-circle text-indigo-600 text-xl"></i>
+                                <span class="font-bold text-gray-800">LEGENDA:</span>
+                            </div>
+                            <div class="flex-1 grid grid-cols-3 gap-4">
+                                <div class="flex items-center space-x-2">
+                                    <div class="px-3 py-1 bg-green-100 border-2 border-green-500 rounded-lg text-green-800 font-bold text-sm">
+                                        ✓ Master
+                                    </div>
+                                    <span class="text-sm text-gray-700">= Użyj wartości z <strong>Master</strong> (zielona kolumna)</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="px-3 py-1 bg-orange-100 border-2 border-orange-500 rounded-lg text-orange-800 font-bold text-sm">
+                                        ← Slave
+                                    </div>
+                                    <span class="text-sm text-gray-700">= Użyj wartości ze <strong>Slave</strong> (pomarańczowa kolumna)</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <div class="px-3 py-1 bg-purple-100 border-2 border-purple-500 rounded-lg text-purple-800 font-bold text-sm">
+                                        ✏️ Własna
+                                    </div>
+                                    <span class="text-sm text-gray-700">= Wpisz <strong>własną</strong> wartość (pojawi się pole)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3 text-xs text-gray-600 ml-8">
+                            <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                            <strong>Wskazówka:</strong> Domyślnie wybrano najlepszą opcję. Zmień tylko jeśli widzisz konflikt (⚠️) lub wolisz inną wartość.
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-2xl border-2 border-gray-200 overflow-hidden">
+                        <table class="w-full">
+                            <thead class="bg-gradient-to-r from-gray-100 to-gray-200">
+                                <tr>
+                                    <th class="px-6 py-4 text-left text-xs font-black text-gray-700 uppercase tracking-wider">
+                                        Pole
+                                        <div class="text-xs font-normal text-gray-500 mt-1">Nazwa pola w Zoho</div>
+                                    </th>
+                                    <th class="px-6 py-4 text-left text-xs font-black text-green-700 uppercase tracking-wider">
+                                        <i class="fas fa-crown mr-2"></i>Wartość Master
+                                        <div class="text-xs font-normal text-green-600 mt-1">Firma docelowa (zachowaj)</div>
+                                    </th>
+                                    <th class="px-6 py-4 text-left text-xs font-black text-orange-700 uppercase tracking-wider">
+                                        <i class="fas fa-compress-arrows-alt mr-2"></i>Wartość Slave
+                                        <div class="text-xs font-normal text-orange-600 mt-1">Firma źródłowa (scal)</div>
+                                    </th>
+                                    <th class="px-6 py-4 text-left text-xs font-black text-indigo-700 uppercase tracking-wider">
+                                        <i class="fas fa-hand-pointer mr-2"></i>Wybór źródła
+                                        <div class="text-xs font-normal text-indigo-600 mt-1">Skąd wziąć wartość końcową?</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="fields-table-body" class="divide-y divide-gray-200">
+                                <!-- Dynamically generated -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Relations Visualization -->
+                <div class="mb-10">
+                    <h3 class="text-2xl font-black text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-project-diagram text-indigo-600 mr-4"></i>
+                        Powiązania do przeniesienia
+                    </h3>
+                    <div class="grid grid-cols-4 gap-4" id="relations-grid">
+                        <!-- Dynamically generated -->
+                    </div>
+                </div>
+
+                <!-- Summary Panel -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-100 border-3 border-indigo-300 rounded-2xl p-8 mb-10">
+                    <h3 class="text-xl font-bold text-indigo-900 mb-5 flex items-center">
+                        <i class="fas fa-clipboard-check text-indigo-600 mr-3 text-2xl"></i>
+                        Podsumowanie operacji
+                    </h3>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between bg-white rounded-lg px-5 py-3 shadow">
+                                <span class="text-gray-700 font-semibold"><i class="fas fa-copy text-blue-600 mr-2"></i>Pola do skopiowania:</span>
+                                <span id="summary-fields" class="text-2xl font-black text-blue-600">0</span>
+                            </div>
+                            <div class="flex items-center justify-between bg-white rounded-lg px-5 py-3 shadow">
+                                <span class="text-gray-700 font-semibold"><i class="fas fa-tag text-purple-600 mr-2"></i>Tagi do przeniesienia:</span>
+                                <span id="summary-tags" class="text-2xl font-black text-purple-600">0</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between bg-white rounded-lg px-5 py-3 shadow">
+                                <span class="text-gray-700 font-semibold"><i class="fas fa-link text-indigo-600 mr-2"></i>Powiązania (rekordy):</span>
+                                <span id="summary-relations" class="text-2xl font-black text-indigo-600">0</span>
+                            </div>
+                            <div class="flex items-center justify-between bg-white rounded-lg px-5 py-3 shadow">
+                                <span class="text-gray-700 font-semibold"><i class="fas fa-trash-alt text-red-600 mr-2"></i>Slave zostanie:</span>
+                                <span id="summary-delete" class="text-lg font-black text-red-600">SPRAWDZONE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex items-center justify-between pt-8 border-t-4 border-gray-200">
+                    <button onclick="skipPair()" class="px-8 py-4 bg-gray-300 hover:bg-gray-400 text-gray-800 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg">
+                        <i class="fas fa-forward mr-3"></i>
+                        Pomiń tę parę
+                    </button>
+                    
+                    <div class="flex space-x-6">
+                        <button onclick="quitProcess()" class="px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-lg">
+                            <i class="fas fa-times-circle mr-3"></i>
+                            Przerwij proces
+                        </button>
+                        <button onclick="mergePair()" id="merge-button" class="px-12 py-5 bg-gradient-to-r from-green-500 via-green-600 to-emerald-600 hover:from-green-600 hover:via-green-700 hover:to-emerald-700 text-white rounded-xl font-black text-2xl shadow-2xl transition-all transform hover:scale-110 active:scale-95">
+                            <i class="fas fa-check-double mr-3"></i>
+                            SCALIĆ I KONTYNUUJ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Finished Screen -->
+        <div class="fade-in" id="finished-screen" style="display: none;">
+            <div class="bg-white rounded-3xl shadow-2xl p-16 max-w-3xl mx-auto text-center">
+                <div class="w-32 h-32 mx-auto mb-8 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center shadow-2xl">
+                    <i class="fas fa-check-circle text-7xl text-white"></i>
+                </div>
+                <h2 class="text-5xl font-black text-gray-800 mb-4">Ukończono!</h2>
+                <p class="text-xl text-gray-600 mb-10">Wszystkie duplikaty zostały przetworzone</p>
+                
+                <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 text-left border-2 border-gray-200" id="final-summary">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Podsumowanie</h3>
+                    <!-- Summary -->
+                </div>
+                
+                <button onclick="window.location.reload()" class="mt-10 px-10 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-lg transition-all">
+                    <i class="fas fa-redo mr-2"></i>
+                    Rozpocznij nową sesję
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Loading Overlay with Progress -->
+    <div id="loading-overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50" style="display: none;">
+        <div class="bg-white rounded-3xl shadow-2xl p-12 text-center max-w-lg">
+            <div class="w-24 h-24 mx-auto mb-6">
+                <i class="fas fa-spinner fa-spin text-7xl text-indigo-600"></i>
+            </div>
+            <div class="text-2xl font-bold text-gray-800 mb-3" id="loading-message">Ładowanie...</div>
+            <div class="text-gray-600 mb-6" id="loading-sub">Proszę czekać</div>
+            
+            <!-- Live counter -->
+            <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-6 border-2 border-indigo-200" id="loading-stats" style="display: none;">
+                <div class="grid grid-cols-2 gap-4 text-left">
+                    <div>
+                        <div class="text-sm text-gray-600 mb-1">Pobrano firm:</div>
+                        <div class="text-3xl font-black text-indigo-600" id="loading-fetched">0</div>
+                    </div>
+                    <div>
+                        <div class="text-sm text-gray-600 mb-1">Znaleziono par:</div>
+                        <div class="text-3xl font-black text-purple-600" id="loading-duplicates">0</div>
+                    </div>
+                </div>
+                <div class="mt-4 text-xs text-gray-500 text-center">
+                    <i class="fas fa-sync fa-spin mr-2"></i>Aktualizacja co 1 sekundę...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>

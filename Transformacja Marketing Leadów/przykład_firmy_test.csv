@@ -1,0 +1,32 @@
+Account_ID,Account_Name,Contact_ID,Uwagi
+1234567890123456789,PRZYKŁADOWA FIRMA SP. Z O.O.,,Test bez kontaktu
+9876543210987654321,TEST PRZYCHODNIA,1111111111111111111,Test z kontaktem
+5555555555555555555,MEDIDESK TESTOWA,2222222222222222222,Kolejny test
+
+# INSTRUKCJA UŻYCIA:
+# 
+# 1. PRZED UŻYCIEM - PODMIEŃ ID NA PRAWIDŁOWE!
+# 
+#    Account_ID - musi być prawidłowym ID firmy z modułu Accounts w Zoho CRM
+#    Contact_ID - opcjonalnie ID kontaktu z modułu Contacts (może być puste)
+# 
+# 2. Jak znaleźć prawidłowe ID:
+#    - Otwórz firmę w Zoho CRM
+#    - Skopiuj ID z URL (np. https://crm.zoho.eu/crm/org.../tab/Accounts/1234567890123456789)
+#    - Wklej do kolumny Account_ID
+# 
+# 3. Użycie:
+#    python create_leads_from_file.py przykład_firmy_test.csv
+#    
+#    - Wybierz kolumnę 1 (Account_ID)
+#    - Jeśli masz Contact_ID wybierz kolumnę 3
+#    - Włącz tryb testowy (t) - doda [TEST] do nazwy
+#    
+#    UWAGA: Nazwa leada (Last_Name) będzie ZAWSZE z nazwy firmy!
+#           Kontakt jest tylko przypisywany do leada (lookup).
+# 
+# 4. Sprawdź wyniki:
+#    Zobacz plik: wyniki_create_leads/create_leads_results_*.csv
+# 
+# UWAGA: Te ID są przykładowe i NIE BĘDĄ DZIAŁAĆ!
+#        Musisz użyć prawidłowych ID z Twojego CRM!

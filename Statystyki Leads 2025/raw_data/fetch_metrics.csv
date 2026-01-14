@@ -1,0 +1,11 @@
+﻿module,filename,records_count,pages,fetched_at,duration_s
+Marketing_Leads,marketing_leads_raw.json,2013,11,2026-01-13T14:00:48.431291,12.6
+Leads,leads_raw.json,14249,72,2026-01-13T14:02:05.070240,75.4
+Deals,deals_raw.json,4127,21,2026-01-13T14:02:23.530874,18.0
+Ankiety_Spotkan,ankiety_spotkan_raw.json,449,3,2026-01-13T14:02:26.001121,2.4
+Events,events_raw.json,1229,7,2026-01-13T14:02:30.513418,4.4
+Marketing_Leads,marketing_leads_raw.json,2013,11,2026-01-13T14:02:29.134182,10.2
+Leads,leads_raw.json,14249,72,2026-01-13T14:03:37.445941,67.0
+Deals,deals_raw.json,4127,21,2026-01-13T14:03:55.743630,17.9
+Ankiety_Spotkan,ankiety_spotkan_raw.json,449,3,2026-01-13T14:03:58.062009,2.2
+Events,events_raw.json,1229,7,2026-01-13T14:04:02.515630,4.4

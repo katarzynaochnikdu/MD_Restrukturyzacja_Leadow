@@ -1,0 +1,28 @@
+﻿# Pola Modułu: Kalkulacje_JSON
+
+## Statystyki
+
+- **Łącznie pól:** 9
+- **Pola niestandardowe:** 1
+- **Pola standardowe:** 8
+- **Pola formuł:** 0
+- **Pola lookup:** 0
+- **Pola wyboru (picklist):** 1
+
+## Lista Pól
+
+| Etykieta Pola (UI)          | Nazwa API          | Typ Danych   | Pole Niestandardowe   | Wymagane   | Tylko Odczyt   | Typ Danych (Polski)   | Możliwe Wartości                                                                                                                   | Powiązany Moduł   | Maks. Długość   | Wyrażenie Formuły   | Typ Zwracany Formuły   | Sekcja   | Wartość Domyślna   |
+|:----------------------------|:-------------------|:-------------|:----------------------|:-----------|:---------------|:----------------------|:-----------------------------------------------------------------------------------------------------------------------------------|:------------------|:----------------|:--------------------|:-----------------------|:---------|:-------------------|
+| JSON                        | JSON               | textarea     | ✓                     |            |                | Tekst wielowierszowy  |                                                                                                                                    |                   | 32000           |                     |                        |          |                    |
+| Czas Utworzenia             | Created_Time       | datetime     |                       |            |                | Data i czas           |                                                                                                                                    |                   |                 |                     |                        |          |                    |
+| Czas anulowania subskrypcji | Unsubscribed_Time  | datetime     |                       |            | ✓              | Data i czas           |                                                                                                                                    |                   |                 |                     |                        |          |                    |
+| Czas modyfikacji            | Modified_Time      | datetime     |                       |            |                | Data i czas           |                                                                                                                                    |                   |                 |                     |                        |          |                    |
+| Czas ostatniej aktywności   | Last_Activity_Time | datetime     |                       |            |                | Data i czas           |                                                                                                                                    |                   |                 |                     |                        |          |                    |
+| Kalkulacja JSON - nazwa     | Name               | autonumber   |                       |            |                | Autonumer             |                                                                                                                                    |                   |                 |                     |                        |          |                    |
+| Kalkulacja JSON Właściciel  | Owner              | ownerlookup  |                       |            |                | Właściciel            |                                                                                                                                    |                   |                 |                     |                        |          |                    |
+| Tryb anulowania subskrypcji | Unsubscribed_Mode  | picklist     |                       |            | ✓              | Lista wyboru          | Formularz zgody (Consent form); Ręcznie (Manual); Łącze anulowania subskrypcji (Unsubscribe link); Zoho Campaigns (Zoho campaigns) |                   |                 |                     |                        |          |                    |
+| Znacznik                    | Tag                | text         |                       |            |                | Tekst                 |                                                                                                                                    |                   | 2000            |                     |                        |          |                    |
+
+---
+
+*Eksportowano z Zoho CRM API*

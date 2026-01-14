@@ -1,0 +1,313 @@
+RAPORT WALIDACJI: Microsite.translated.csv
+================================================================================
+
+Wiersze z EN: 3149
+Zwalidowane: 3149
+Błędy krytyczne: 0
+Ostrzeżenia: 42
+
+
+OSTRZEŻENIA:
+================================================================================
+
+Wiersz 134 - Key: lbl.hours.minutes
+EN: {hour}h {minutes}m
+PL: {hour}h {minutes}m
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 148 - Key: format.datetime.same.day
+EN: {startDate[MMM D, YYYY]}
+PL: {startDate[MMM D, YYYY]}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 153 - Key: format.start.time.end.time.with.timezone
+EN: {startDate [hh:mm A]} - {endDate[hh:mm A (z)]}
+PL: {startDate [hh:mm A]} - {endDate[hh:mm A (z)]}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 154 - Key: format.agenda.datetime.same.day
+EN: {startDate[ddd, MMM DD, YYYY]}
+PL: {startDate[ddd, MMM DD, YYYY]}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 155 - Key: format.agenda.datetime.different.days.same.month.same.year
+EN: {startDate[MMM DD]} - {endDate[DD]}
+PL: {startDate[MMM DD]} - {endDate[DD]}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 156 - Key: format.agenda.datetime.different.days.different.month.same.year
+EN: {startDate[MMM DD]} - {endDate[MMM DD]}
+PL: {startDate[MMM DD]} - {endDate[MMM DD]}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 157 - Key: format.agenda.datetime.different.days.different.month.different.year
+EN: {startDate[MMM DD]} - {endDate[MMM DD]}
+PL: {startDate[MMM DD]} - {endDate[MMM DD]}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 158 - Key: format.agenda.calendar.datetime.same.day
+EN: {startDate[ddd, MMM DD, YYYY]}
+PL: {startDate[ddd, MMM DD, YYYY]}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 159 - Key: format.agenda.calendar.datetime.different.days.same.month.same.year
+EN: {startDate[ddd, MMM DD]} - {endDate[ddd, MMM DD]}
+PL: {startDate[ddd, MMM DD]} - {endDate[ddd, MMM DD]}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 160 - Key: format.agenda.calendar.datetime.different.days.different.month.same.year
+EN: {startDate[ddd, MMM DD]} - {endDate[ddd, MMM DD]}
+PL: {startDate[ddd, MMM DD]} - {endDate[ddd, MMM DD]}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 161 - Key: format.agenda.calendar.datetime.different.days.different.month.different.year
+EN: {startDate[ddd, MMM DD]} - {endDate[ddd, MMM DD]}
+PL: {startDate[ddd, MMM DD]} - {endDate[ddd, MMM DD]}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 162 - Key: format.agenda.printer.datetime.same.day
+EN: {startDate[dddd, MMMM DD, YYYY]}
+PL: {startDate[dddd, MMMM DD, YYYY]}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 163 - Key: format.agenda.printer.datetime.different.days.same.month.same.year
+EN: {startDate[MMMM DD]} - {endDate[DD, YYYY]}
+PL: {startDate[MMMM DD]} - {endDate[DD, YYYY]}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 164 - Key: format.agenda.printer.datetime.different.days.different.month.same.year
+EN: {startDate[MMMM DD]} - {endDate[MMMM DD, YYYY]}
+PL: {startDate[MMMM DD]} - {endDate[MMMM DD, YYYY]}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 165 - Key: format.agenda.printer.datetime.different.days.different.month.different.year
+EN: {startDate[MMMM DD, YYYY]} - {endDate[MMMM DD, YYYY]}
+PL: {startDate[MMMM DD, YYYY]} - {endDate[MMMM DD, YYYY]}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 195 - Key: lbl.home
+EN: Home
+PL: Strona główna
+⚠️  PL jest 3x dłuższe niż EN (może być problem)
+   EN length: 4, PL length: 13
+
+--------------------------------------------------------------------------------
+
+Wiersz 196 - Key: msg.seo.title
+EN: {{eventName}}
+PL: {{eventName}}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 250 - Key: format.weekday.with.date
+EN: ddd, MMM DD, YYYY
+PL: ddd, MMM DD, YYYY
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 257 - Key: lbl.a4.dimension
+EN: A4 ({dimension})
+PL: A4 ({dimension})
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 258 - Key: lbl.a3.dimension
+EN: A3 ({dimension})
+PL: A3 ({dimension})
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 259 - Key: lbl.a5.dimension
+EN: A5 ({dimension})
+PL: A5 ({dimension})
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 260 - Key: lbl.letter.dimension
+EN: Letter ({dimension})
+PL: Letter ({dimension})
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 261 - Key: lbl.legal.dimension
+EN: Legal ({dimension})
+PL: Legal ({dimension})
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 455 - Key: msg.venue.location.meta
+EN: {city}, {state} - {country}
+PL: {city}, {state} - {country}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 492 - Key: lbl.background
+EN: Background
+PL: Tło
+⚠️  PL jest 3x krótsze niż EN (może być problem)
+   EN length: 10, PL length: 3
+
+--------------------------------------------------------------------------------
+
+Wiersz 550 - Key: lbl.on
+EN: On
+PL: Włączone
+⚠️  PL jest 3x dłuższe niż EN (może być problem)
+   EN length: 2, PL length: 8
+
+--------------------------------------------------------------------------------
+
+Wiersz 578 - Key: lbl.tba
+EN: TBA
+PL: Do ogłoszenia
+⚠️  PL jest 3x dłuższe niż EN (może być problem)
+   EN length: 3, PL length: 13
+
+--------------------------------------------------------------------------------
+
+Wiersz 687 - Key: msg.twitter.sample.placeholder
+EN: https://www.x.com/xyz
+PL: https://www.x.com/xyz
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 688 - Key: msg.instagram.sample.placeholder
+EN: https://www.instagram.com/xyz
+PL: https://www.instagram.com/xyz
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 689 - Key: msg.facebook.sample.placeholder
+EN: https://www.facebook.com/xyz
+PL: https://www.facebook.com/xyz
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 690 - Key: msg.linkedin.sample.placeholder
+EN: https://www.linkedin.com/in/xyz
+PL: https://www.linkedin.com/in/xyz
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 695 - Key: msg.tiktok.sample.placeholder
+EN: https://www.tiktok.com/xyz
+PL: https://www.tiktok.com/xyz
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 818 - Key: lbl.complete.payment
+EN: Complete Payment
+PL: Opłać
+⚠️  PL jest 3x krótsze niż EN (może być problem)
+   EN length: 16, PL length: 5
+
+--------------------------------------------------------------------------------
+
+Wiersz 964 - Key: msg.branding.copyright.content
+EN: Copyright {eventYear} {portalName}
+PL: Copyright {eventYear} {portalName}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 1139 - Key: msg.telegram.sample.placeholder
+EN: https://telegram.org/abcde
+PL: https://telegram.org/abcde
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 1143 - Key: msg.medium.sample.placeholder
+EN: https://medium.com/xyz
+PL: https://medium.com/xyz
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 1560 - Key: abbreviation.not.available
+EN: N/A
+PL: Nie dotyczy
+⚠️  PL jest 3x dłuższe niż EN (może być problem)
+   EN length: 3, PL length: 11
+
+--------------------------------------------------------------------------------
+
+Wiersz 1836 - Key: ph.event.name
+EN: {eventName}
+PL: {eventName}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 1849 - Key: msg.error.form.field.not.valid
+EN: Pole formularza zawiera nieprawidłową wartość
+PL: Pole formularza zawiera nieprawidłową wartość
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 1876 - Key: page.title
+EN: {{eventName}} - {{pageName}}
+PL: {{eventName}} - {{pageName}}
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+
+Wiersz 2375 - Key: lbl.b&w
+EN: B&W
+PL: Czarno-białe
+⚠️  PL jest 3x dłuższe niż EN (może być problem)
+   EN length: 3, PL length: 12
+
+--------------------------------------------------------------------------------
+
+Wiersz 2385 - Key: lbl.windows.linux
+EN: Windows / Linux
+PL: Windows / Linux
+⚠️  PL zawiera fragment EN (może nie przetłumaczone?)
+
+--------------------------------------------------------------------------------
+

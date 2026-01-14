@@ -1,0 +1,42 @@
+# Cache i dane tymczasowe
+*.pkl
+*.log
+
+# Wyniki
+wyniki_*/
+
+# Pliki testowe z prawdziwymi danymi (nie commituj!)
+*_real_data.csv
+*_real_data.xlsx
+test_*.csv
+test_*.xlsx
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Środowisko wirtualne
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+
+# Wrażliwe dane - NIGDY nie commituj!
+*client_id*
+*client_secret*
+*refresh_token*
+*.env
+.env.local

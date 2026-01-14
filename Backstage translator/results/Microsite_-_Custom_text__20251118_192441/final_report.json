@@ -1,0 +1,35 @@
+{
+  "total_rows": 58,
+  "translated_rows": 58,
+  "with_placeholders": 1,
+  "confidence_histogram": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 58
+  },
+  "total_issues": {},
+  "verified_count": 0,
+  "fixed_count": 0,
+  "critical_fixed_keys": [],
+  "output_files": {
+    "input_copy": "results\\Microsite_-_Custom_text__20251118_192441\\Microsite - Custom text.csv",
+    "log": "results\\Microsite_-_Custom_text__20251118_192441\\run.log",
+    "phase1_requests": "results\\Microsite_-_Custom_text__20251118_192441\\phase1_requests.jsonl",
+    "phase1_responses": "results\\Microsite_-_Custom_text__20251118_192441\\phase1_responses.jsonl",
+    "phase3_requests": "results\\Microsite_-_Custom_text__20251118_192441\\phase3_requests.jsonl",
+    "phase3_responses": "results\\Microsite_-_Custom_text__20251118_192441\\phase3_responses.jsonl",
+    "csv": "results\\Microsite_-_Custom_text__20251118_192441\\Microsite - Custom text.translated.csv",
+    "xlsx": "results\\Microsite_-_Custom_text__20251118_192441\\Microsite - Custom text.translated.xlsx"
+  },
+  "phase1_input_tokens": 15084,
+  "phase1_output_tokens": 4633,
+  "phase1_cached_tokens": 0,
+  "phase1_cost_usd": 0.08404,
+  "phase3_input_tokens": 0,
+  "phase3_output_tokens": 0,
+  "phase3_cached_tokens": 0,
+  "phase3_cost_usd": 0.0,
+  "total_cost_usd": 0.08404
+}
