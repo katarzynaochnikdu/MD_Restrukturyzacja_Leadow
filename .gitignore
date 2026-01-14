@@ -32,3 +32,7 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Results and output folders
+**/wyniki_*/
+**/wyniki_czy_istnieje/
